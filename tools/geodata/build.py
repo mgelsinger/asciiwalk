@@ -265,7 +265,7 @@ def build(world_id='warsaw', center=None, size=2000, name=None, output=None):
     (out/'features.json').write_bytes(encoded)
     terrain=[write_grid(context,out,'context',elevation_origin),write_grid(detail,out,'core',elevation_origin)]
     landmarks.sort(key=lambda x:x['name'])
-    spawn={'x':-9.5,'z':24,'yaw':-.45} if is_warsaw else {'x':roads[0]['points'][0][0]+roads[0]['width']/2+1,'z':roads[0]['points'][0][2],'yaw':0}
+    spawn={'x':22,'z':-281,'yaw':1.72,'pitch':.2} if is_warsaw else {'x':roads[0]['points'][0][0]+roads[0]['width']/2+1,'z':roads[0]['points'][0][2],'yaw':0}
     manifest={'schemaVersion':1,'id':world_id,'name':name or ('Warsaw, New York' if is_warsaw else world_id),'description':'The village in the valley' if is_warsaw else 'A new place, in characters',
               'origin':{'lon':center[0],'lat':center[1],'east':ox,'north':on,'elevation':elevation_origin,'crs':crs},
               'bounds':[round(v,2) for v in [minx,minz,maxx,maxz]],'bbox':bounds,'seed':stable(world_id),'spawn':spawn,

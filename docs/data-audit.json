@@ -19,9 +19,9 @@
       "sha256": "fac7ac5360b08785106db51d6b0b34f261cbc5e0e5ca8a9d0b394c1c17f5b7b2"
     },
     "manifest.json": {
-      "bytes": 38572,
-      "gzipBytes": 6111,
-      "sha256": "6f9fcaadb95433dfe5d8f5ce253afdf96c7bad6fa9e27391b84ad6240742e3c2"
+      "bytes": 38589,
+      "gzipBytes": 6119,
+      "sha256": "a452bce4d0cdd37fd2f03c8e54b3f0bf4d0c692cb114b9b68a93edfeb5e8e0bf"
     }
   },
   "counts": {

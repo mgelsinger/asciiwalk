@@ -13,7 +13,7 @@ export const manifestSchema = z
     revision: z.string(),
     features: z.string(),
     seed: number,
-    spawn: z.object({ x: number, z: number, yaw: number }),
+    spawn: z.object({ x: number, z: number, yaw: number, pitch: number.optional() }),
     origin: z.object({
       lon: number,
       lat: number,

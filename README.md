@@ -11,7 +11,7 @@ Explore Warsaw, New York on foot in a world drawn entirely with ASCII characters
 ## Try it in a minute
 
 1. Open the **[browser demo](https://mgelsinger.github.io/asciiwalk/)** on a desktop or laptop. Nothing to install, no account, and no API key.
-2. Choose **Pick a starting location**. Try the monument, courthouse, downtown shops, school, shopping center, movie theater, or park.
+2. Choose **Explore Warsaw** to begin at the Civil War Monument, or **Pick a starting location** to visit the courthouse, downtown shops, school, shopping center, movie theater, or park.
 3. Use **WASD** to walk and **Q / E** to turn, or hold the left mouse button and drag. Press **G** to jump somewhere else and **C** to try monochrome.
 
 The demo includes Warsaw and prepared examples of Perry and downtown Buffalo. **Choose another town** switches between them. Preparing a new neighborhood requires the local app and optional Python setup below.

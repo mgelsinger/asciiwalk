@@ -169,7 +169,7 @@ async function load(id: string) {
     renderer.signs = new SignLayer(data, world.places.signs);
     walker = new Walker(data, camera, canvas, [...world.recreation.obstacles, ...world.places.obstacles]);
     walker.reset();
-    selectedDestination = undefined;
+    selectedDestination = id === 'warsaw' ? 'monument' : undefined;
     life = new TownLife(data, world.material, (x, z) => walker.blocked(x, z));
     world.scene.add(life.group);
     walker.onUnlock = () => {

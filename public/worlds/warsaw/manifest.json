@@ -25,9 +25,10 @@
   ],
   "seed": 3565732208,
   "spawn": {
-    "x": -9.5,
-    "z": 24,
-    "yaw": -0.45
+    "x": 22,
+    "z": -281,
+    "yaw": 1.72,
+    "pitch": 0.2
   },
   "features": "features.json",
   "terrain": [
