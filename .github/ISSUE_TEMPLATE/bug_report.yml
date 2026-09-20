@@ -1,0 +1,39 @@
+name: Report a problem
+description: Help improve walking, recognition, setup, or rendering.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe what you expected and what happened instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: How were you running ASCII Walk?
+      options:
+        - Browser demo
+        - Local launcher or npm start
+        - Development or my own hosted build
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: 'Example: Windows 11, Chrome 153, laptop with integrated graphics'
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Include the town, destination, and steps. For recognition feedback, describe the missing or inaccurate feature and share a reference if available.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or error messages
+      description: Optional. Avoid including private files or sensitive information in logs.

@@ -1,0 +1,494 @@
+{
+  "7120249": {
+    "height": 7.4,
+    "floors": 2,
+    "color": "#b8ac88",
+    "roof": "flat",
+    "style": "school",
+    "references": ["https://mhs.warsawcsd.org/", "https://www.wkbw.com/news/local-news/wyoming-county/warsaw-csd-school-board-holds-first-meeting-since-canceling-basketball-seasons-amid-ongoing-investigation"],
+    "note": "Mapped campus outline. The local reporter's exterior photo informs the pale brick, tall gridded stair window, glazed central entrance and name wall. Height, dimensions and exact entrance alignment are estimates."
+  },
+  "478975613": {
+    "color": "#b29778",
+    "roof": "flat",
+    "style": "school",
+    "references": ["https://es.warsawcsd.org/"],
+    "note": "Mapped elementary school outline and address retained. School entrance, glazing and small campus furnishings are interpreted, not a surveyed exterior reconstruction."
+  },
+  "477964575": {
+    "height": 3.1,
+    "floors": 1,
+    "color": "#aab39b",
+    "roof": "gable",
+    "inferred": true,
+    "note": "Mapped small ancillary building between the Village Park playground and pools. The footprint is OSM. A single-storey utility form replaces the generic two-storey commercial fallback; height, color and roof remain inferred, not photographically verified."
+  },
+  "477983260": {
+    "axis": "z",
+    "roof": "flat",
+    "trim": "#d6ceb0",
+    "bayWidth": 3.1,
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:North_Main_Street,_Warsaw,_New_York_-_20200503.jpg"
+    ],
+    "note": "East side of North Main at Buffalo. Footprint is mapped as a single block. Sections estimate the visible shop divisions, pale three-story corner, lower red-brick neighbors, and central pediment from the 2020 reference. Current business names are omitted.",
+    "sections": [
+      {
+        "min": -100,
+        "max": -75,
+        "height": 10.2,
+        "floors": 2,
+        "color": "#a45b3d",
+        "style": "bay"
+      },
+      {
+        "min": -75,
+        "max": -64,
+        "height": 8.4,
+        "floors": 2,
+        "color": "#d8c6a3"
+      },
+      {
+        "min": -64,
+        "max": -53,
+        "height": 4.7,
+        "floors": 1,
+        "color": "#8d6550",
+        "style": "awning"
+      },
+      {
+        "min": -53,
+        "max": -38,
+        "height": 10.5,
+        "floors": 2,
+        "color": "#a15440",
+        "style": "pediment"
+      },
+      {
+        "min": -38,
+        "max": -21,
+        "height": 9.8,
+        "floors": 2,
+        "color": "#b77760"
+      },
+      {
+        "min": -21,
+        "max": 0,
+        "height": 13.3,
+        "floors": 3,
+        "color": "#c9c4a1",
+        "style": "cornice",
+        "landmark": "Main & Buffalo corner"
+      }
+    ]
+  },
+  "487084312": {
+    "axis": "z",
+    "roof": "flat",
+    "trim": "#d6d0b9",
+    "bayWidth": 3,
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:East_Side_of_N_Main_St_Warsaw_Downtown_Historic_District_Oct_09.jpg"
+    ],
+    "note": "East block north of Genesee. The 2009 image supports the three-story brick corner with projecting pale bays, ocher facade, and red arched-window neighbors. Heights and dividing planes are visual estimates.",
+    "sections": [
+      {
+        "min": -190,
+        "max": -164,
+        "height": 11.8,
+        "floors": 3,
+        "color": "#b88b57"
+      },
+      {
+        "min": -164,
+        "max": -153,
+        "height": 8.5,
+        "floors": 2,
+        "color": "#ab7b63",
+        "style": "bay"
+      },
+      {
+        "min": -153,
+        "max": -144,
+        "height": 8.8,
+        "floors": 2,
+        "color": "#a88067"
+      },
+      {
+        "min": -144,
+        "max": -132,
+        "height": 9.6,
+        "floors": 2,
+        "color": "#ad5c43"
+      },
+      {
+        "min": -132,
+        "max": -122,
+        "height": 12.8,
+        "floors": 3,
+        "color": "#aa5843"
+      },
+      {
+        "min": -122,
+        "max": -112,
+        "height": 12.1,
+        "floors": 3,
+        "color": "#c5a561"
+      },
+      {
+        "min": -112,
+        "max": -100,
+        "height": 13.2,
+        "floors": 3,
+        "color": "#954e38",
+        "style": "bay"
+      }
+    ]
+  },
+  "487084313": {
+    "axis": "z",
+    "roof": "flat",
+    "trim": "#d5cbb0",
+    "bayWidth": 3.1,
+    "references": [
+      "https://warsawnyhistory.org/tours/blocks.html",
+      "https://commons.wikimedia.org/wiki/File:Downtown_historic_district_in_Warsaw,_New_York,_2013.jpg",
+      "https://commons.wikimedia.org/wiki/File:Downtown_Warsaw_(NY)_Historic_District_in_2013.jpg"
+    ],
+    "note": "West commercial block. The 2013 photographs establish the lower two-story red and pale shops, taller gray classical bank, and adjoining three-story plum and cream arched-window facades. Northern unphotographed facades retain estimated rhythm; section boundaries are approximate within the mapped continuous footprint.",
+    "sections": [
+      {
+        "min": -180,
+        "max": -158,
+        "height": 10.2,
+        "floors": 2,
+        "color": "#aa7959"
+      },
+      {
+        "min": -158,
+        "max": -146,
+        "height": 9.1,
+        "floors": 2,
+        "color": "#c3b293"
+      },
+      {
+        "min": -146,
+        "max": -135,
+        "height": 8.8,
+        "floors": 2,
+        "color": "#a4614a"
+      },
+      {
+        "min": -135,
+        "max": -124,
+        "height": 10.1,
+        "floors": 2,
+        "color": "#b6936d"
+      },
+      {
+        "min": -124,
+        "max": -114,
+        "height": 9.6,
+        "floors": 2,
+        "color": "#bc9674"
+      },
+      {
+        "min": -114,
+        "max": -103,
+        "height": 12.5,
+        "floors": 3,
+        "color": "#9c5843"
+      },
+      {
+        "min": -103,
+        "max": -92,
+        "height": 9.4,
+        "floors": 2,
+        "color": "#c2b592"
+      },
+      {
+        "min": -92,
+        "max": -81,
+        "height": 10.2,
+        "floors": 2,
+        "color": "#a06348"
+      },
+      {
+        "min": -81,
+        "max": -70,
+        "height": 8.2,
+        "floors": 2,
+        "color": "#aaa997",
+        "style": "awning"
+      },
+      {
+        "min": -70,
+        "max": -60,
+        "height": 13.2,
+        "floors": 3,
+        "color": "#c5b8a7",
+        "style": "arched"
+      },
+      {
+        "min": -60,
+        "max": -49,
+        "height": 13.0,
+        "floors": 3,
+        "color": "#825f65",
+        "style": "arched"
+      },
+      {
+        "min": -49,
+        "max": -38,
+        "height": 12.5,
+        "floors": 2,
+        "color": "#b5b7b1",
+        "style": "bank",
+        "bayWidth": 2.8
+      },
+      {
+        "min": -38,
+        "max": -27,
+        "height": 8.8,
+        "floors": 2,
+        "color": "#c6c7ab",
+        "style": "arched",
+        "bayWidth": 3.2
+      },
+      {
+        "min": -27,
+        "max": -17,
+        "height": 8.4,
+        "floors": 2,
+        "color": "#a4674f",
+        "style": "arched",
+        "bayWidth": 3.2
+      },
+      {
+        "min": -17,
+        "max": 0,
+        "height": 11.2,
+        "floors": 2,
+        "color": "#d6c5a0",
+        "style": "bay",
+        "bayWidth": 4.2
+      }
+    ]
+  },
+  "477982665": {
+    "height": 10.1,
+    "floors": 2,
+    "roof": "flat",
+    "color": "#a5684f",
+    "trim": "#e2d2ae",
+    "style": "bay",
+    "bayWidth": 3.4,
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:West_Buffalo_Street_looking_west_from_Main_Street,_Warsaw,_New_York_-_20200503.jpg"
+    ],
+    "note": "Southwest corner: projecting pale bays and decorative trim, observed 2020. Approximate dimensions."
+  },
+  "477962348": {
+    "height": 10.3,
+    "floors": 2,
+    "roof": "flat",
+    "color": "#939e96",
+    "trim": "#e0d5b6",
+    "style": "theater",
+    "references": [
+      "https://www.spotlighttheater.com/movie-theater/warsaw/theater-info",
+      "https://cdn.theatertoolkit.com/media/spotlighttheaters/locations/spotlight-theater2.jpg"
+    ],
+    "note": "Spotlight Theater at 23 South Main. The theater's own exterior photo informs the stone front, upper windows, marquee, sign and three tall fins. Dimensions and window alignment remain estimates. Marquee programs in the walk are fictional."
+  },
+  "478318131": {
+    "height": 9.5,
+    "floors": 2,
+    "roof": "flat",
+    "color": "#9e7857",
+    "style": "modern",
+    "note": "Theater-area massing inferred; storefront identity is not asserted."
+  },
+  "477962351": {
+    "height": 6.5,
+    "floors": 1,
+    "roof": "flat",
+    "color": "#a1543b",
+    "trim": "#e3ddc1",
+    "style": "postoffice",
+    "facing": 1.5708,
+    "landmark": "Warsaw Post Office",
+    "bayWidth": 4,
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:NY_19_through_Warsaw.jpg"
+    ],
+    "note": "Red-brick post office, pale pilasters and arched facade openings. Dimensions estimated from dated reference."
+  },
+  "477953400": {
+    "height": 9.6,
+    "floors": 1,
+    "roof": "hip",
+    "roofHeight": 2.5,
+    "color": "#b2a080",
+    "trim": "#e0d8bb",
+    "style": "library",
+    "facing": -1.5708,
+    "landmark": "Warsaw Public Library",
+    "bayWidth": 5,
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:Warsaw_Public_Library_Oct_09.jpg"
+    ],
+    "note": "Buff masonry, broad white pediment, arched windows and low roof. The mapped curved/angled footprint is retained. Heights are visual estimates.",
+    "entrance": {
+      "x": 9.3,
+      "z": -247.2
+    }
+  },
+  "477953401": {
+    "height": 14,
+    "floors": 2,
+    "roof": "gable",
+    "roofHeight": 5,
+    "color": "#a25b43",
+    "trim": "#d3cbb4",
+    "style": "church",
+    "landmark": "First Methodist Church",
+    "tower": {
+      "x": -27,
+      "z": -252,
+      "height": 18,
+      "width": 5.3,
+      "spire": 7
+    },
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:Monument_Circle,_historic_district,_Warsaw_NY_2013.jpg"
+    ],
+    "note": "Red brick, large gable and square belfry with steep pyramidal roof. Tower height and position visually estimated."
+  },
+  "478525896": {
+    "height": 12,
+    "floors": 2,
+    "roof": "hip",
+    "color": "#a75f45",
+    "trim": "#e7dfc5",
+    "style": "courthouse",
+    "facing": 1.5708,
+    "landmark": "Wyoming County Courthouse",
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:Wyoming_County_Courthouse_taken_2013.jpg",
+      "https://warsawnyhistory.org/tours/tour6.html"
+    ],
+    "note": "Historic nine-bay brick front with a projecting three-bay portico, four massive Doric columns, stepped entrance, fanlight pediment, quoins and roof dormers. The connected modern wing retains the sourced outline with simplified detail. Dimensions remain reference estimates.",
+    "roofHeight": 2,
+    "entrance": {
+      "x": -44.1,
+      "z": -315.2
+    }
+  },
+  "477966916": {
+    "height": 10.5,
+    "floors": 1,
+    "roof": "gable",
+    "roofHeight": 4,
+    "color": "#b9c3a9",
+    "trim": "#e4dfc6",
+    "style": "church",
+    "landmark": "Trinity Church",
+    "tower": {
+      "x": -133,
+      "z": 26,
+      "height": 6,
+      "width": 3.4,
+      "spire": 0
+    },
+    "references": [
+      "https://warsawnyhistory.org/tours/tour4-Monument%20Circle%20Historical%20District.html",
+      "https://en.wikipedia.org/wiki/Trinity_Church_(Warsaw,_New_York)"
+    ],
+    "note": "Board-and-batten church with lancet openings. Historical spire omitted because it was removed in 2016. Remaining tower cap, color and dimensions are approximate."
+  },
+  "477962350": {
+    "height": 15,
+    "floors": 2,
+    "roof": "gable",
+    "roofHeight": 5,
+    "color": "#a26643",
+    "trim": "#d2ba96",
+    "style": "church",
+    "landmark": "First Baptist Church",
+    "tower": {
+      "x": -20,
+      "z": 123,
+      "height": 22,
+      "width": 4.8,
+      "spire": 7
+    },
+    "note": "Church type and footprint mapped; tower massing is approximate pending a closer exterior reference."
+  },
+  "477982649": {
+    "height": 16,
+    "floors": 2,
+    "roof": "gable",
+    "roofHeight": 5,
+    "color": "#a85938",
+    "trim": "#c4b18d",
+    "style": "church",
+    "tower": {
+      "x": 25,
+      "z": 30,
+      "height": 25,
+      "width": 6,
+      "spire": 5
+    },
+    "references": [
+      "https://commons.wikimedia.org/wiki/File:NY_19_through_Warsaw.jpg"
+    ],
+    "note": "Large red-brick church and corner tower south of Buffalo, with connected buildings. Whole-complex roof treatment remains approximate."
+  },
+  "664425605": {
+    "height": 6.2,
+    "floors": 1,
+    "roof": "flat",
+    "color": "#b9afa0",
+    "trim": "#dfdacc",
+    "style": "plaza",
+    "facing": 1.5708,
+    "bayWidth": 7,
+    "references": [
+      "https://wycoida.org/sites-and-buildings/warsaw-shopping-center",
+      "https://images3.loopnet.com/d2/Mlew9ojyYWXgbTav9nynDlY7mAUD-ZEPRkZ0fVrkOt0/document.pdf"
+    ],
+    "note": "Sourced retail footprints and setback at 461 North Main Street. Low strip-retail frontage and repeated covered bays. Canopy, height and window proportions are estimates; no current business signs are asserted.",
+    "landmark": "Warsaw Shopping Center"
+  },
+  "664425604": {
+    "height": 5.2,
+    "floors": 1,
+    "roof": "flat",
+    "color": "#b9afa0",
+    "trim": "#dfdacc",
+    "style": "plaza",
+    "facing": 1.5708,
+    "bayWidth": 7,
+    "references": [
+      "https://wycoida.org/sites-and-buildings/warsaw-shopping-center",
+      "https://images3.loopnet.com/d2/Mlew9ojyYWXgbTav9nynDlY7mAUD-ZEPRkZ0fVrkOt0/document.pdf"
+    ],
+    "note": "Sourced retail footprints and setback at 461 North Main Street. Low strip-retail frontage and repeated covered bays. Canopy, height and window proportions are estimates; no current business signs are asserted."
+  },
+  "664425606": {
+    "height": 6.0,
+    "floors": 1,
+    "roof": "flat",
+    "color": "#b9afa0",
+    "trim": "#dfdacc",
+    "style": "plaza",
+    "facing": 1.5708,
+    "bayWidth": 7,
+    "references": [
+      "https://wycoida.org/sites-and-buildings/warsaw-shopping-center",
+      "https://images3.loopnet.com/d2/Mlew9ojyYWXgbTav9nynDlY7mAUD-ZEPRkZ0fVrkOt0/document.pdf"
+    ],
+    "note": "Sourced retail footprints and setback at 461 North Main Street. Low strip-retail frontage and repeated covered bays. Canopy, height and window proportions are estimates; no current business signs are asserted."
+  }
+}

@@ -1,0 +1,47 @@
+node_modules/
+.venv/
+dist/
+data/cache/
+data/jobs/
+test-results/
+playwright-report/
+__pycache__/
+.pytest_cache/
+*.log
+.env
+.launcher/
+
+# Personal configuration and credentials
+.env.*
+!.env.example
+.npmrc
+.yarnrc.yml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated worlds: the three reviewed examples are explicitly included
+/public/worlds/*
+!/public/worlds/index.json
+!/public/worlds/warsaw/
+!/public/worlds/area-42p7156-78p0056-1000/
+!/public/worlds/area-42p8864-78p8784-1000/
+
+# Local planning notes, captures, recordings and release staging
+/CODEX_PLAN.md
+/PROGRESS.md
+/docs/validation/
+/.release-check/
+/coverage/
+*.tsbuildinfo
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.lnk
+.idea/
+.vscode/
+*.swp
+*.swo

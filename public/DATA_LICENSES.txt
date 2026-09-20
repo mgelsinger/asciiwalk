@@ -1,0 +1,42 @@
+ASCII WALK - DATA AND ASSET NOTICES
+
+Bundled third-party software notices are in THIRD_PARTY_NOTICES.txt.
+Source and retained geography: https://github.com/mgelsinger/asciiwalk
+
+Map data from OpenStreetMap contributors.
+https://www.openstreetmap.org/copyright
+Open Database License 1.0: https://opendatacommons.org/licenses/odbl/1-0/
+The prepared map geometry and terrain are distributed as an identified data pack,
+separate from application code. OSM-derived adapted data remains available under
+ODbL. Its machine-readable form is in worlds/<world-id>/features.json and
+manifest.json. Source snapshots and the transformation tools accompany this project.
+
+Overture Maps Foundation buildings, release 2026-08-19.0. The bounded Warsaw extract
+lists OpenStreetMap and Microsoft ML Buildings as upstream datasets.
+Buildings theme: ODbL 1.0. Microsoft ML Buildings: ODbL 1.0.
+https://docs.overturemaps.org/attribution/
+https://github.com/microsoft/GlobalMLBuildingFootprints
+The Warsaw pack transfers height only after geometric matching. It does not
+redistribute source imagery. Match IDs, overlap scores, and the actual upstream
+source records are retained in each matched building's heightMatch field.
+
+Terrain: USGS 3D Elevation Program, numeric elevation export.
+https://www.usgs.gov/3d-elevation-program
+https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer
+Native orthometric elevations in meters. Export parameters and checksums are
+recorded in the source cache and world manifest. Values are reprojected/resampled.
+
+Town index: GeoNames cities500, Creative Commons Attribution 4.0.
+https://www.geonames.org/
+https://download.geonames.org/export/dump/readme.txt
+https://creativecommons.org/licenses/by/4.0/
+The local index is filtered to the supported US region and uses ASCII place names.
+
+Font: IBM Plex Mono, IBM Corp. SIL Open Font License 1.1.
+Bundled through @fontsource/ibm-plex-mono. See FONT_LICENSE.txt.
+
+Architectural reference photographs remain in the local research cache and are
+not included as images or textures in the application. Reference page links and
+authors, dates and license URLs are included in REFERENCE_SOURCES.json. All displayed
+geometry, material patterns, people, vehicles and ASCII processing are authored
+for this application. Dated references are not a guarantee of current appearance.

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "spotlight-theater-exterior",
+    "page": "https://www.spotlighttheater.com/movie-theater/warsaw/theater-info",
+    "image": "https://cdn.theatertoolkit.com/media/spotlighttheaters/locations/spotlight-theater2.jpg",
+    "author": "Spotlight Theater",
+    "accessed": "2026-09-13",
+    "use": "Exterior observation: stone front, upper windows, marquee and three vertical fins. Capture date unknown. Photo is not bundled; proportions are estimated and in-world programs are fictional."
+  },
+  {
+    "id": "warsaw-school-entrance",
+    "page": "https://www.wkbw.com/news/local-news/wyoming-county/warsaw-csd-school-board-holds-first-meeting-since-canceling-basketball-seasons-amid-ongoing-investigation",
+    "author": "WKBW",
+    "accessed": "2026-09-13",
+    "use": "Architectural photograph only: pale brick, tall gridded stair window, glazed entrance, canopy and adjacent name wall. No article allegations are used or reproduced. Dimensions and alignment are estimated."
+  },
+  {
+    "id": "warsaw-schools-athletics-project",
+    "page": "https://dec.ny.gov/news/environmental-notice-bulletin/2023-05-03/seqr/wyoming-county-the-warsaw-central-school",
+    "author": "New York State Department of Environmental Conservation",
+    "date": "2023-05-03",
+    "accessed": "2026-09-13",
+    "use": "Proposal describing school athletics and arrival improvements. Not proof of completed construction. Track, goalposts, bleachers and furnishings are interpreted around the retained OSM field."
+  },
+  {
+    "id": "warsaw-school-district",
+    "page": "https://www.warsawcsd.org/",
+    "author": "Warsaw Central School District",
+    "accessed": "2026-09-13",
+    "use": "Campus identity and addresses. Elementary entrance, campus furnishings and activity are inferred."
+  },
+  {
+    "id": "north-main",
+    "page": "https://commons.wikimedia.org/wiki/File:North_Main_Street%2C_Warsaw%2C_New_York_-_20200503.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/North_Main_Street%2C_Warsaw%2C_New_York_-_20200503.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": "Andre Carrotflower",
+    "date": "2020-05-03",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "west-buffalo",
+    "page": "https://commons.wikimedia.org/wiki/File:West_Buffalo_Street_looking_west_from_Main_Street%2C_Warsaw%2C_New_York_-_20200503.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/West_Buffalo_Street_looking_west_from_Main_Street%2C_Warsaw%2C_New_York_-_20200503.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "author": "Andre Carrotflower",
+    "date": "2020-05-03",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "main-south",
+    "page": "https://commons.wikimedia.org/wiki/File:NY_19_through_Warsaw.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/NY_19_through_Warsaw.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/2.0/"
+    ],
+    "author": "Adam Moss",
+    "date": "2015-06-25",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "main-east",
+    "page": "https://commons.wikimedia.org/wiki/File:East_Side_of_N_Main_St_Warsaw_Downtown_Historic_District_Oct_09.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/East_Side_of_N_Main_St_Warsaw_Downtown_Historic_District_Oct_09.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/2.0/"
+    ],
+    "author": "Doug Kerr from Albany, NY, United States",
+    "date": "2009-10-28",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "library",
+    "page": "https://commons.wikimedia.org/wiki/File:Warsaw_Public_Library_Oct_09.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Warsaw_Public_Library_Oct_09.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/2.0/"
+    ],
+    "author": "Doug Kerr from Upstate New York",
+    "date": "2009-10-28",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "courthouse",
+    "page": "https://commons.wikimedia.org/wiki/File:Wyoming_County_Courthouse_taken_2013.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Wyoming_County_Courthouse_taken_2013.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "author": "Kenneth C. Zirkel",
+    "date": "2013-08-15",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "circle",
+    "page": "https://commons.wikimedia.org/wiki/File:Monument_Circle%2C_historic_district%2C_Warsaw_NY_2013.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Monument_Circle%2C_historic_district%2C_Warsaw_NY_2013.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "author": "Kenneth C. Zirkel",
+    "date": "2013-08-15",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "downtown-2013",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_historic_district_in_Warsaw%2C_New_York%2C_2013.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Downtown_historic_district_in_Warsaw%2C_New_York%2C_2013.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "author": "Kenneth C. Zirkel",
+    "date": "2013-08-15",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "downtown-west",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_Warsaw_%28NY%29_Historic_District_in_2013.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Downtown_Warsaw_%28NY%29_Historic_District_in_2013.jpg",
+    "licenseUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "author": "Kenneth C. Zirkel",
+    "date": "2013-08-15",
+    "use": "Architectural observation; source photo not included in application."
+  },
+  {
+    "id": "monument-circle-history",
+    "page": "https://warsawnyhistory.org/tours/tour6.html",
+    "author": "Warsaw Historical Society",
+    "accessed": "2026-09-13",
+    "use": "Architectural descriptions of the courthouse, monument and civic setting; text reference, not reproduced."
+  },
+  {
+    "id": "warsaw-shopping-center",
+    "page": "https://wycoida.org/sites-and-buildings/warsaw-shopping-center",
+    "author": "Wyoming County Industrial Development Agency",
+    "accessed": "2026-09-13",
+    "use": "Address and property description. Plaza facade details remain estimates from mapped massing."
+  },
+  {
+    "id": "warsaw-shopping-center-brochure",
+    "page": "https://images3.loopnet.com/d2/Mlew9ojyYWXgbTav9nynDlY7mAUD-ZEPRkZ0fVrkOt0/document.pdf",
+    "author": "Washington St Partners",
+    "accessed": "2026-09-13",
+    "use": "Property description and parking context only. Photographs could not be retrieved and were not used."
+  }
+]

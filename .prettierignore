@@ -1,0 +1,9 @@
+node_modules
+.venv
+dist
+data
+public/worlds
+research
+test-results
+docs/validation
+package-lock.json

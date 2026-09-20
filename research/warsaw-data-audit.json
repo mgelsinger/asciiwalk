@@ -1,0 +1,450 @@
+{
+  "checked_utc": "2026-09-12T20:59:38.405398+00:00",
+  "bbox_wsen": [
+    -78.15,
+    42.729,
+    -78.112,
+    42.759
+  ],
+  "osm_timestamp": "2026-09-12T20:49:21Z",
+  "source": "https://overpass-api.de/api/interpreter",
+  "license": "OpenStreetMap ODbL; https://www.openstreetmap.org/copyright",
+  "query_sha256": "39bba12a8829a81b224140e50ae38ace04d7c7d7228584e155a268d9f88d79b1",
+  "raw_file_sha256": "cff9b69fc4ac4a498c876e6fcdcfba6fb49448e1d0f7ff2670d422be66e4ef60",
+  "element_count": 1933,
+  "building_elements": 1322,
+  "building_detail_counts": {
+    "height": 0,
+    "building:levels": 3,
+    "roof:shape": 0,
+    "roof:height": 0,
+    "building:colour": 0,
+    "building:material": 0,
+    "name": 33,
+    "addr:housenumber": 975
+  },
+  "building_type_counts": {
+    "yes": 799,
+    "hospital": 2,
+    "house": 477,
+    "retail": 1,
+    "office": 1,
+    "apartments": 11,
+    "church": 2,
+    "storage": 1,
+    "commercial": 6,
+    "garage": 19,
+    "school": 2,
+    "storage_tank": 1
+  },
+  "highway_way_count": 326,
+  "highway_type_counts": {
+    "service": 134,
+    "residential": 88,
+    "unclassified": 7,
+    "primary_link": 2,
+    "primary": 33,
+    "tertiary": 7,
+    "footway": 54,
+    "track": 1
+  },
+  "named_roads": [
+    "Allen Street",
+    "Alpine Drive",
+    "Bartlett Avenue",
+    "Brooklyn Street",
+    "Butternut Street",
+    "Center Street",
+    "Clinton Street",
+    "Commerce Way",
+    "Cottage Court",
+    "Culver Avenue",
+    "Duncan Street",
+    "East Buffalo Street",
+    "East Court Street",
+    "East Highland Avenue",
+    "Elm Street",
+    "Empire Street",
+    "Fargo Street",
+    "Farman Street",
+    "Frank Street",
+    "Genesee Street",
+    "Gordon Terrace",
+    "Grove Street",
+    "Industrial Street",
+    "Jackson Street",
+    "Jefferson Street",
+    "Keeney Street",
+    "Liberty Street",
+    "Linwood Avenue",
+    "Livingston Street",
+    "Merchant Road",
+    "Miner Road",
+    "Miner Street",
+    "Mount View Street",
+    "Murray Street",
+    "North Main Street",
+    "North Maple Street",
+    "North Street",
+    "Oak Street",
+    "Oatka Street",
+    "Orchard Street",
+    "Palmer Street",
+    "Park Street",
+    "Patrick Place",
+    "Perry Avenue",
+    "Prospect Street",
+    "Purdy Avenue",
+    "Reid Avenue",
+    "Roberts Street",
+    "Rochester Street",
+    "Salina Street",
+    "Short Street",
+    "South Avenue",
+    "South Main Street",
+    "South Maple Street",
+    "State Street",
+    "Summit Avenue",
+    "Toolhouse Road",
+    "View Street",
+    "Warsaw Village Park",
+    "Warsaw Waterfall Path",
+    "Washington Street",
+    "West Buffalo Street",
+    "West Court Street",
+    "West Highland Avenue",
+    "Wyoming Street"
+  ],
+  "road_detail_counts": {
+    "width": 1,
+    "lanes": 13,
+    "sidewalk": 0,
+    "sidewalk:left": 0,
+    "sidewalk:right": 0,
+    "bridge": 13,
+    "layer": 14,
+    "oneway": 19
+  },
+  "landscape_counts": {
+    "natural=tree": 0,
+    "natural=wood": 0,
+    "landuse=forest": 13,
+    "natural=water": 15,
+    "waterway=stream": 3
+  },
+  "named_buildings": [
+    {
+      "id": "way/446165258",
+      "tags": {
+        "building": "hospital",
+        "name": "Wyoming County Community Health System"
+      }
+    },
+    {
+      "id": "way/477949254",
+      "tags": {
+        "addr:housenumber": "200",
+        "addr:street": "Allen Street",
+        "building": "yes",
+        "name": "Fairview Box Company"
+      }
+    },
+    {
+      "id": "way/477953399",
+      "tags": {
+        "addr:housenumber": "40",
+        "addr:street": "East Buffalo Street",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Warsaw Fire Department"
+      }
+    },
+    {
+      "id": "way/477953400",
+      "tags": {
+        "addr:housenumber": "130",
+        "addr:street": "North Main Street",
+        "amenity": "library",
+        "building": "yes",
+        "name": "Warsaw Public Library"
+      }
+    },
+    {
+      "id": "way/477953401",
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "West Court Street",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "First Methodist Church"
+      }
+    },
+    {
+      "id": "way/477962347",
+      "tags": {
+        "addr:housenumber": "80",
+        "addr:street": "North Main Street",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "Dollar General"
+      }
+    },
+    {
+      "id": "way/477962350",
+      "tags": {
+        "addr:housenumber": "65",
+        "addr:street": "South Main Street",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "First Baptist Church of Warsaw"
+      }
+    },
+    {
+      "id": "way/477962351",
+      "tags": {
+        "addr:housenumber": "35",
+        "addr:street": "South Main Street",
+        "amenity": "post_office",
+        "building": "yes",
+        "name": "Warsaw Post Office"
+      }
+    },
+    {
+      "id": "way/477962353",
+      "tags": {
+        "addr:housenumber": "71",
+        "addr:street": "Prospect Street",
+        "building": "house",
+        "name": "East Side Offices"
+      }
+    },
+    {
+      "id": "way/477964571",
+      "tags": {
+        "addr:housenumber": "220",
+        "addr:street": "Liberty Street",
+        "building": "office",
+        "name": "Five Star Bank Corporate Office"
+      }
+    },
+    {
+      "id": "way/477964582",
+      "tags": {
+        "addr:housenumber": "62",
+        "addr:street": "Prospect Street",
+        "amenity": "social_facility",
+        "building": "yes",
+        "name": "East Side Nursing Home"
+      }
+    },
+    {
+      "id": "way/477966917",
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Disalvo's Pizzaria"
+      }
+    },
+    {
+      "id": "way/477966919",
+      "tags": {
+        "addr:housenumber": "42",
+        "addr:street": "West Buffalo Street",
+        "building": "yes",
+        "name": "Jacked 24/7 Fitness Club"
+      }
+    },
+    {
+      "id": "way/477966927",
+      "tags": {
+        "addr:housenumber": "12",
+        "addr:street": "Center Street",
+        "amenity": "ice_cream",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "Yummies"
+      }
+    },
+    {
+      "id": "way/477982649",
+      "tags": {
+        "building": "church",
+        "name": "United Church of Warsaw South Church"
+      }
+    },
+    {
+      "id": "way/477982674",
+      "tags": {
+        "addr:housenumber": "26",
+        "addr:street": "Industrial Street",
+        "building": "yes",
+        "name": "Upstate Door, Inc."
+      }
+    },
+    {
+      "id": "way/477987256",
+      "tags": {
+        "addr:housenumber": "99",
+        "addr:street": "North Main Street",
+        "building": "commercial",
+        "name": "Ace Hardware"
+      }
+    },
+    {
+      "id": "way/478097418",
+      "tags": {
+        "addr:housenumber": "100",
+        "addr:street": "Allen Street",
+        "building": "yes",
+        "name": "Montgomery's Building Supplies"
+      }
+    },
+    {
+      "id": "way/478202499",
+      "tags": {
+        "building": "yes",
+        "name": "Veterans Memorial Building"
+      }
+    },
+    {
+      "id": "way/478525889",
+      "tags": {
+        "addr:housenumber": "297",
+        "addr:street": "Linwood Avenue",
+        "building": "apartments",
+        "name": "Pinewood Apartments"
+      }
+    },
+    {
+      "id": "way/478525897",
+      "tags": {
+        "addr:housenumber": "151",
+        "addr:street": "North Main Street",
+        "amenity": "prison",
+        "building": "yes",
+        "name": "Wyoming County Jail"
+      }
+    },
+    {
+      "id": "way/478734163",
+      "tags": {
+        "addr:housenumber": "245",
+        "addr:street": "West Buffalo Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Wyoming County Veterans Club"
+      }
+    },
+    {
+      "id": "way/478734183",
+      "tags": {
+        "addr:housenumber": "408",
+        "addr:street": "North Main Street",
+        "building": "commercial",
+        "name": "Sears"
+      }
+    },
+    {
+      "id": "way/478893745",
+      "tags": {
+        "addr:housenumber": "246",
+        "addr:street": "North Main Street",
+        "building": "yes",
+        "name": "Robinson & Hackemer Funeral Home"
+      }
+    },
+    {
+      "id": "way/478893772",
+      "tags": {
+        "addr:housenumber": "16",
+        "addr:street": "North Street",
+        "amenity": "school",
+        "building": "yes",
+        "name": "Saint Michael's Parochial School"
+      }
+    },
+    {
+      "id": "way/478893774",
+      "tags": {
+        "addr:housenumber": "171",
+        "addr:street": "North Main Street",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "name": "Saint Michael Catholic Church"
+      }
+    },
+    {
+      "id": "way/478893779",
+      "tags": {
+        "amenity": "fuel",
+        "building": "yes",
+        "name": "Metro"
+      }
+    },
+    {
+      "id": "way/478893781",
+      "tags": {
+        "addr:housenumber": "64",
+        "addr:street": "South Main Street",
+        "building": "yes",
+        "name": "7-Eleven"
+      }
+    },
+    {
+      "id": "way/483564730",
+      "tags": {
+        "addr:housenumber": "39",
+        "addr:street": "Duncan Street",
+        "building": "yes",
+        "name": "Clarity"
+      }
+    },
+    {
+      "id": "way/483584082",
+      "tags": {
+        "addr:housenumber": "32",
+        "addr:street": "Salina Street",
+        "building": "apartments",
+        "name": "Crestview Terrace Apartments"
+      }
+    },
+    {
+      "id": "way/483584083",
+      "tags": {
+        "addr:housenumber": "283",
+        "addr:street": "North Main Street",
+        "building": "yes",
+        "name": "Microtel Inn & Suites by Wyndham Warsaw"
+      }
+    },
+    {
+      "id": "way/487084338",
+      "tags": {
+        "addr:housenumber": "326",
+        "addr:street": "North Main Street",
+        "building": "commercial",
+        "name": "Health Center"
+      }
+    },
+    {
+      "id": "way/557481894",
+      "tags": {
+        "addr:housenumber": "105",
+        "addr:street": "West Buffalo Road",
+        "amenity": "restaurant",
+        "building": "commercial",
+        "name": "SilverLake Family Restaurant"
+      }
+    }
+  ],
+  "notes": [
+    "Element counts are not deduplicated physical building counts.",
+    "Missing tags do not prove missing structures or geometry.",
+    "Bounding box is a planning area, not the village boundary."
+  ],
+  "main_buffalo_intersection": {
+    "osm_node": 221701159,
+    "lat": 42.7402213,
+    "lon": -78.132583
+  }
+}

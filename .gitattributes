@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.ico binary
+*.bin binary
+*.tif binary
+# Preserve checksummed geography and source snapshots byte for byte.
+/public/worlds/** -text -whitespace linguist-generated
+/research/*.json -text -whitespace linguist-generated
+/research/sources/** -text -whitespace
+/data/overrides/** -text -whitespace
+/public/THIRD_PARTY_NOTICES.txt -whitespace

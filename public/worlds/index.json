@@ -1,0 +1,5 @@
+[
+  { "id": "warsaw", "name": "Warsaw, New York", "curated": true },
+  { "id": "area-42p7156-78p0056-1000", "name": "Perry, NY", "curated": false },
+  { "id": "area-42p8864-78p8784-1000", "name": "Buffalo, NY", "curated": false }
+]

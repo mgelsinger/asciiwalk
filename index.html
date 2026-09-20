@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101a1a" />
+    <meta
+      name="description"
+      content="Walk through real places, rendered entirely in ASCII. Begin in Warsaw, New York."
+    />
+    <title>ASCII Walk - Warsaw, New York</title>
+    <script>
+      if (location.protocol === 'file:') {
+        document.documentElement.style.visibility = 'hidden';
+        addEventListener('DOMContentLoaded', () => {
+          document.body.innerHTML =
+            '<main><h1>Start ASCII Walk with the launcher</h1><p>On Windows, close this tab and double-click <strong>Launch ASCII Walk.cmd</strong> after installing the project dependencies. On Windows, macOS or Linux, run <strong>npm ci</strong> once and then <strong>npm start</strong> in the project folder.</p><p>The launcher starts the local server and opens your default browser. This app cannot run by opening its HTML file directly.</p><p>If the launcher is already running, <a href="http://127.0.0.1:5173/">open ASCII Walk here</a>.</p></main>';
+          document.body.style.cssText =
+            'margin:0;padding:64px 24px;background:#101a1a;color:#d7dfc5;font:18px/1.6 Consolas,monospace';
+          document.querySelector('main').style.cssText = 'max-width:680px;margin:auto';
+          document.querySelector('a').style.color = '#e2edac';
+          document.documentElement.style.visibility = 'visible';
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <canvas
+      id="world"
+      aria-label="A walkable ASCII world. Use WASD to walk. Drag the mouse or use Q and E to turn."
+      tabindex="0"
+    ></canvas>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="ASCII Walk home"
+        ><span class="brand-mark">[a/w]</span><span>ASCII WALK</span></a
+      >
+      <div class="location-heading">
+        <span class="status-dot" aria-hidden="true">*</span><span id="location-name">WARSAW, NEW YORK</span>
+      </div>
+      <nav aria-label="World controls">
+        <button id="destinations-open" title="Jump to a location (G)" aria-haspopup="dialog" disabled>
+          [g] Locations</button
+        ><button id="map-toggle" title="Map (M)">[m] Map</button
+        ><button id="color-toggle" title="Color (C)">[c] Color</button
+        ><button id="mouse-capture" title="Capture mouse (L)">[l] Mouse look</button
+        ><button id="settings-open" title="Settings">Settings</button>
+      </nav>
+    </header>
+    <section class="navigation-hud" aria-label="Street names and compass">
+      <div class="street-readout">
+        <strong id="street-name">Main Street</strong
+        ><span id="cross-street">At Main Street &amp; Buffalo Street</span>
+      </div>
+      <div class="compass" role="img" aria-label="Compass bearings">
+        <div><span class="tiny-label">FACING</span> <strong id="heading">N 000</strong></div>
+        <pre id="compass-tape" aria-hidden="true"></pre>
+        <span class="compass-pointer" aria-hidden="true">^</span>
+      </div>
+    </section>
+    <div id="loading" role="status" aria-live="polite">
+      <span class="loader-art"> . : + # + : . </span>
+      <p id="loading-label">Finding our way to Warsaw</p>
+      <small>Real places. A different perspective.</small>
+    </div>
+    <main id="intro" class="intro hidden">
+      <div class="eyebrow"><span>FIELD NOTES</span><span>001 / NEW YORK</span></div>
+      <h1>A place you know.<br />A world of characters.</h1>
+      <p class="intro-copy">
+        Take the long way through Warsaw.<br />Real streets, rolling hills, and a little<br />life between the
+        letters.
+      </p>
+      <button id="start" class="primary">Explore Warsaw <span aria-hidden="true">-&gt;</span></button>
+      <button id="intro-destinations" class="destination-start">Pick a starting location &gt;</button>
+      <div class="intro-meta"><span>WASD TO WALK</span><span>DRAG OR Q/E TO TURN</span></div>
+      <button id="locations-open" class="text-button">Choose another town &gt;</button>
+    </main>
+    <section id="pause" class="panel pause hidden" aria-label="Walk paused">
+      <div class="eyebrow">TAKE YOUR TIME</div>
+      <h2>A moment in Warsaw.</h2>
+      <p>WASD walks. Drag the view or use Q/E to turn.<br />L captures the mouse. Escape pauses.</p>
+      <button id="resume" class="primary">Keep walking <span>-&gt;</span></button>
+      <button id="pause-destinations" class="destination-start">Jump to a location &gt;</button>
+      <div class="button-row">
+        <button id="reset">Return to start</button><button id="pause-locations">Another town</button>
+      </div>
+    </section>
+    <aside id="map-panel" class="panel map-panel hidden" aria-label="Town map">
+      <div class="panel-heading">
+        <div>
+          <span class="eyebrow">YOUR NEIGHBORHOOD</span>
+          <h2>Find your bearings.</h2>
+        </div>
+        <button id="map-close" aria-label="Close map">[x]</button>
+      </div>
+      <p class="helper">Jump to a clear landmark viewpoint:</p>
+      <div id="landmarks" class="landmarks"></div>
+      <div id="map-streets" class="map-streets"></div>
+      <pre id="ascii-map" aria-label="ASCII street map"></pre>
+      <div class="map-key">
+        NORTH UP / @ YOU / ^ &gt; v &lt; FACING<br /># BUILDINGS / . STREETS / ~ WATER<br />B BASKETBALL / T
+        TENNIS / P PLAYGROUND / o BALL FIELD
+      </div>
+    </aside>
+    <div id="look-hint" class="look-hint hidden">
+      Hold and drag to look <span>/</span> Q / E to turn <span>/</span> L for mouse capture
+    </div>
+    <div id="notice" class="notice hidden" role="status" aria-live="polite"></div>
+    <button id="interact" class="interaction-hint hidden">[f] Interact</button>
+    <footer class="bottom-bar">
+      <div>
+        <span class="tiny-label">ON FOOT</span><span id="control-mode">Drag to look / Q E to turn</span>
+      </div>
+      <div class="keys">
+        <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>walk</span><kbd>SHIFT</kbd><span>faster</span
+        ><kbd>Q</kbd><kbd>E</kbd><span>turn</span><kbd>ESC</kbd><span>pause</span>
+      </div>
+      <div class="walk-stats">
+        <span id="distance">0 m</span><span class="separator">/</span
+        ><span id="elevation">308 m elevation</span>
+      </div>
+    </footer>
+    <div class="attribution">
+      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a
+      ><span> + </span
+      ><a href="https://docs.overturemaps.org/attribution/" target="_blank" rel="noreferrer">Overture</a
+      ><span> + USGS</span><button id="about-open">About this world</button>
+    </div>
+    <dialog id="destinations" class="panel destinations-dialog" aria-labelledby="destinations-title">
+      <div class="panel-heading">
+        <div>
+          <span class="eyebrow">EXPLORE WARSAW</span>
+          <h2 id="destinations-title">Where would you like to go?</h2>
+        </div>
+        <button data-close="destinations" aria-label="Close location selector">[x]</button>
+      </div>
+      <p class="destination-intro">Choose a spot to arrive there right away. Then walk around and explore.</p>
+      <div id="destination-list" class="destination-list"></div>
+      <p class="helper">WASD to walk / Q or E to turn / G to choose another spot</p>
+    </dialog>
+    <dialog id="settings" class="panel">
+      <div class="panel-heading">
+        <div>
+          <span class="eyebrow">MAKE YOURSELF AT HOME</span>
+          <h2>Your view.</h2>
+        </div>
+        <button data-close="settings" aria-label="Close settings">[x]</button>
+      </div>
+      <label
+        >Character size<select id="density">
+          <option value="coarse">Coarse - larger characters</option>
+          <option value="balanced" selected>Balanced</option>
+          <option value="fine">Fine - more detail</option>
+        </select></label
+      >
+      <label
+        >Palette<select id="palette">
+          <option value="color">Colored ASCII</option>
+          <option value="mono">Monochrome</option>
+        </select></label
+      >
+      <label
+        >Character contrast <input id="contrast" type="range" min="0.7" max="1.9" step="0.05" value="1.25"
+      /></label>
+      <label
+        >Mouse sensitivity <input id="sensitivity" type="range" min="0.3" max="2" step="0.1" value="1"
+      /></label>
+      <label>Field of view <input id="fov" type="range" min="50" max="95" value="70" /></label>
+      <label
+        >World activity<select id="activity">
+          <option value="live">Live - people, flags, games and water</option>
+          <option value="still">Still - freeze people, flags and play</option>
+        </select></label
+      >
+      <p class="helper">No head bob. Your settings and place are saved on this device.</p>
+    </dialog>
+    <dialog id="locations" class="panel locations-dialog">
+      <div class="panel-heading">
+        <div>
+          <span class="eyebrow">A WORLD TO WANDER</span>
+          <h2>Somewhere new.</h2>
+        </div>
+        <button data-close="locations" aria-label="Close places">[x]</button>
+      </div>
+      <div id="saved-locations" class="saved-locations"></div>
+      <p id="builder-info" class="helper hidden">
+        These three places are ready to explore. To prepare another neighborhood,
+        <a
+          href="https://github.com/mgelsinger/asciiwalk#run-on-your-computer"
+          target="_blank"
+          rel="noreferrer"
+          >get the local app</a
+        >.
+      </p>
+      <form id="import-form">
+        <label
+          >Find a town<input id="place-search" type="search" placeholder="Town, state..." autocomplete="off"
+        /></label>
+        <div id="search-results"></div>
+        <div class="coordinates">
+          <label
+            >Latitude<input
+              id="latitude"
+              type="number"
+              step="any"
+              value="42.7402"
+              min="24"
+              max="50"
+              required /></label
+          ><label
+            >Longitude<input
+              id="longitude"
+              type="number"
+              step="any"
+              value="-78.1326"
+              min="-125"
+              max="-66"
+              required
+          /></label>
+        </div>
+        <label
+          >Area to prepare<select id="area-size">
+            <option value="1000">1 x 1 km - a few blocks</option>
+            <option value="2000" selected>2 x 2 km - a neighborhood</option>
+            <option value="4000">4 x 4 km - a small town</option>
+          </select></label
+        >
+        <pre id="area-preview" class="area-preview" aria-label="Selected area bounds"></pre>
+        <div class="button-row">
+          <button type="button" id="preview-area">Preview streets</button
+          ><button type="button" data-pan="north">North</button
+          ><button type="button" data-pan="south">South</button
+          ><button type="button" data-pan="west">West</button
+          ><button type="button" data-pan="east">East</button>
+        </div>
+        <p class="helper">
+          N is up. + marks the center, # buildings, . streets, ~ water. Arrow buttons move the selected area
+          by one quarter of its width. Preview again after moving it.
+        </p>
+        <p class="helper">
+          Prepare a US neighborhood once, then revisit it anytime. New places use generated building details.
+          Warsaw includes additional architectural work.
+        </p>
+        <button id="prepare-area" class="primary" type="submit">Prepare this place <span>+</span></button
+        ><button id="cancel-import" type="button" class="hidden">Cancel preparation</button>
+        <p id="import-status" role="status" aria-live="polite"></p>
+      </form>
+    </dialog>
+    <dialog id="about" class="panel">
+      <div class="panel-heading">
+        <div>
+          <span class="eyebrow">THE WORLD BEHIND THE WORDS</span>
+          <h2>Real, with room for imagination.</h2>
+        </div>
+        <button data-close="about" aria-label="Close about">[x]</button>
+      </div>
+      <p>
+        Streets and building outlines come from geographic data. Ground contours follow USGS elevation.
+        Building heights combine mapped data and estimates.
+      </p>
+      <p>
+        Warsaw's downtown includes architectural details interpreted from dated photographs. Trees, people,
+        and traffic bring a little imagined life to the scene. This is a place to explore, not a live view or
+        navigation service.
+      </p>
+      <div id="source-list"></div>
+      <p class="helper">
+        Only printable ASCII characters draw the world. Original photographs are not displayed in the scene.
+      </p>
+      <a href="./DATA_LICENSES.txt" target="_blank">Data, font, and reference credits &gt;</a>
+    </dialog>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

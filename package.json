@@ -1,0 +1,46 @@
+{
+  "name": "ascii-walk",
+  "version": "0.1.0",
+  "description": "Explore Warsaw, New York in a walkable world rendered entirely with ASCII characters.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgelsinger/asciiwalk.git"
+  },
+  "homepage": "https://mgelsinger.github.io/asciiwalk/",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/launch.mjs",
+    "stop": "node tools/launch.mjs --stop",
+    "validate:assets": "node tools/validate-assets.mjs",
+    "shortcuts": "node tools/install-shortcuts.mjs",
+    "setup": "node tools/setup.mjs",
+    "dev": "node server/dev.mjs",
+    "data:warsaw": "node tools/python.mjs tools/geodata/build.py --id warsaw",
+    "check": "tsc --noEmit && prettier --check src server tools/*.mjs index.html tests/browser tests/unit *.ts",
+    "test": "vitest run",
+    "test:geo": "node tools/python.mjs -m pytest tests/geodata -q",
+    "test:e2e": "playwright test",
+    "build": "npm run validate:assets && tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "format": "prettier --write src server tools/*.mjs index.html tests/browser tests/unit *.ts"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "three": "^0.186.0",
+    "zod": "^4.6.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2",
+    "@types/three": "^0.186.0",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.0"
+  }
+}
