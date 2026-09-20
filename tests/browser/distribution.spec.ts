@@ -4,6 +4,7 @@ test('static distribution loads from a subdirectory and switches bundled worlds 
   page,
 }) => {
   test.skip(!process.env.ASCII_STATIC, 'Run against a production build with ASCII_STATIC=1');
+  await page.setViewportSize({ width: 1280, height: 720 });
   const errors: string[] = [];
   const failed: string[] = [];
   const apiRequests: string[] = [];
@@ -21,10 +22,18 @@ test('static distribution loads from a subdirectory and switches bundled worlds 
   await expect(page.locator('#world')).toBeFocused();
   const before = await page.evaluate(() => ({ ...(window as any).__asciiWalk.walker.pose }));
   await page.keyboard.down('w');
-  await page.waitForTimeout(700);
-  await page.keyboard.up('w');
-  const after = await page.evaluate(() => (window as any).__asciiWalk.walker.pose);
-  expect(Math.hypot(before.x - after.x, before.z - after.z)).toBeGreaterThan(0.5);
+  try {
+    // Software-rendered CI frames can be much slower than a desktop GPU.
+    // Require real movement, without assuming a fixed number of frames in 700 ms.
+    await expect
+      .poll(async () => {
+        const after = await page.evaluate(() => (window as any).__asciiWalk.walker.pose);
+        return Math.hypot(before.x - after.x, before.z - after.z);
+      })
+      .toBeGreaterThan(0.5);
+  } finally {
+    await page.keyboard.up('w');
+  }
   await page.keyboard.press('c');
   await expect(page.locator('#color-toggle')).toContainText('Mono');
   for (const name of ['Perry, NY', 'Buffalo, NY', 'Warsaw, New York']) {
